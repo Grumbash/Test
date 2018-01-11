@@ -1,0 +1,64 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px
+);
+
+@import "../bootstrap/scss/bootstrap";
+a{
+	&:hover{
+		color: red !important;
+	}
+}
+.logo{
+	position: absolute;
+	z-index: 100;
+	top: .5em;
+}
+
+.navbar{
+	height: 90px;
+	background-color: #fff;
+	.form-control{
+		border: none;
+		display: none;
+	}
+	.btn{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../images/magnifying-glass.png);
+		background-color: transparent;
+		height:1.5em;
+		width: 1.5em;
+		border: none;
+	}
+}
+.carousel-item{
+	background-image: url(../images/bg.jpg);
+}
+
+.wrap{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	// margin: 0 2vw; 
+	.btn{
+		border-radius: 3em;
+		height: 3.75em;
+		width: 13.75em;
+	}
+	h2{
+		font-size: 3em;
+	}
+	.img{
+		object-fit: cover;
+	}
+}

@@ -29,5 +29,13 @@
     "bootstrap": "^4.0.0-beta.3",
     "jquery": "^3.2.1",
     "normalizecss": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Grumbash/Test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grumbash/Test/issues"
+  },
+  "homepage": "https://github.com/Grumbash/Test#readme"
 }

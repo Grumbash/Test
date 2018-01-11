@@ -1,7 +1,7 @@
 > How to install this project
 
-1. git clone git+https://github.com/Grumbash/Brest-.git your directory
+1. git clone https://github.com/Grumbash/Test.git to your directory
 2. cd your directory 
-3. run the console then white: 
+3. run the console then write: 
 4. npm i
-5. gulp prod
+5. gulp dist
