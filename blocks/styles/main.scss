@@ -36,7 +36,14 @@ a{
 		border: none;
 		display: none;
 	}
-
+	.nav-item{
+		margin: 0 25px;
+		color: #474747;
+		font-weight: 500;
+		&:last-child{
+			margin-right: calc(25px * 2);
+		}
+	}
 	.btn{
 		background-repeat: no-repeat;
 		background-size: cover;

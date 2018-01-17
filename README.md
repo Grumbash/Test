@@ -4,4 +4,5 @@
 2. cd your directory 
 3. run the console then write: 
 4. npm i
-5. gulp dist
+5. gulp 
+6. gulp prod

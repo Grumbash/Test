@@ -103,9 +103,9 @@ gulp.task('build', ['clean'], function () {
 
 //copy images to outputDir
 gulp.task('imgBuild', ['clean'], function() {
-	return gulp.src(paths.devDir + 'img/**/*.*')
+	return gulp.src(paths.devDir + 'images/**')
 		.pipe(imagemin())
-		.pipe(gulp.dest(paths.outputDir + 'img/'));
+		.pipe(gulp.dest(paths.outputDir + 'images/'));
 });
 
 //copy fonts to outputDir

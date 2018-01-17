@@ -7502,6 +7502,13 @@ a:hover {
   .navbar .form-control {
     border: none;
     display: none; }
+  .navbar .nav-item {
+    margin: 0 25px;
+    color: #474747;
+    font-weight: 500; }
+    .navbar .nav-item:last-child {
+      margin-right: -webkit-calc(25px * 2);
+      margin-right: calc(25px * 2); }
   .navbar .btn {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
