@@ -7552,9 +7552,6 @@ a:hover {
     width: 13.75em; }
   .slider-container h2 {
     font-size: 3em; }
-  .slider-container .img {
-    -o-object-fit: contain;
-       object-fit: contain; }
   .slider-container .inner-slide {
     margin-bottom: 4em; }
 

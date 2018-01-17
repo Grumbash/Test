@@ -92,7 +92,7 @@ gulp.task('clean', function(cb) {
 	rimraf(paths.outputDir, cb);
 });
 
-//css + js
+//css 
 gulp.task('build', ['clean'], function () {
 	return gulp.src(paths.devDir + '*.html')
 		.pipe( useref() )
@@ -108,15 +108,10 @@ gulp.task('imgBuild', ['clean'], function() {
 		.pipe(gulp.dest(paths.outputDir + 'images/'));
 });
 
-//copy fonts to outputDir
-gulp.task('fontsBuild', ['clean'], function() {
-	return gulp.src(paths.devDir + '/fonts/*')
-		.pipe(gulp.dest(paths.outputDir + 'fonts/'));
-});
 
 //default
 gulp.task('default', ['move', 'pug', 'sass', 'scripts', 'browser-sync', 'watch' ]);
 
 //production
-gulp.task('prod', ['build', 'imgBuild', 'fontsBuild']);
+gulp.task('prod', ['build', 'imgBuild']);
 
