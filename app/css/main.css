@@ -477,10 +477,10 @@ pre {
   margin-left: auto; }
   @media (min-width: 320px) {
     .container {
-      max-width: 100%; } }
+      max-width: 540px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 100%; } }
+      max-width: 768px; } }
   @media (min-width: 1024px) {
     .container {
       max-width: 960px; } }
@@ -7512,14 +7512,21 @@ a:hover {
     width: 1.5em;
     border: none; }
 
-.carousel-item {
+.slide {
   background-image: url(../images/bg.jpg); }
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.carousel-indicators li {
+  background-color: #bcbcbc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 6px; }
+
+.carousel-indicators .active {
+  background-color: #e54646; }
+
+.slider-container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -7528,28 +7535,40 @@ a:hover {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-  .row .btn {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .slider-container .btn {
     -webkit-border-radius: 3em;
             border-radius: 3em;
     height: 3.75em;
     width: 13.75em; }
-  .row h2 {
+  .slider-container h2 {
     font-size: 3em; }
-  .row .img {
+  .slider-container .img {
     -o-object-fit: contain;
        object-fit: contain; }
+  .slider-container .inner-slide {
+    margin-bottom: 4em; }
+
+.footer {
+  background-color: #474747;
+  height: 80px;
+  line-height: 80px;
+  color: #a3a3a3; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
-    margin: 0;
-    padding: 0; }
   .navbar {
     padding: .5rem 0; }
     .navbar .navbar-collapse {
       padding: 0 1rem; }
     .navbar .nav-item {
       height: 3rem;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .slider-container .btn {
+    -webkit-border-radius: 3em;
+            border-radius: 3em;
+    height: 3.75em;
+    width: 100%; }
+  .slider-container h2 {
+    font-size: 2em; } }

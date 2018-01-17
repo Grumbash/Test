@@ -38,51 +38,68 @@ html(lang="en")
 					form.form-inline.my-2.my-lg-0.ml-lg-1
 						input.form-control.mr-sm-2(type='search', placeholder='Введите запрос...', aria-label='Search')
 						button.btn.my-2.my-sm-0(type='submit') 
-		#carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="7500")
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="7500").container-fluid
 			ol.carousel-indicators
 				li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
 				li(data-target='#carouselExampleIndicators', data-slide-to='1')
 				li(data-target='#carouselExampleIndicators', data-slide-to='2')
+				li(data-target='#carouselExampleIndicators', data-slide-to='3')
 			.carousel-inner
 				.carousel-item.active
 					.container.justify-content-arround.wrap
-						.row
-							img.d-block(src='images/board.png', alt='First slide').img
-							.col-4.align-self-center
+						.row.d-flex.slider-container
+							img.d-block(src='images/board.png', alt='First slide').img.col-sm-12.col-xl-6.col-lg-6.align-self-start
+							.col-lg-4.col-xl-4.col-sm-auto.align-self-center.inner-slide
 								h2.title-inner 
 									| Ваша выбор,
 								h2.title-inner наша работа!
 								button.btn.btn-danger
 									span.see-more
 										| Узнать подробнее
-				//- .carousel-item
-				//- 	.container-fluid
-				//- 		.row
-				//- 			img.d-block.w-100(src='images/board.png', alt='Second slide')
-				//- 			.carousel-caption.d-none.d-md-block
-				//- 				h2.title-inner 
-				//- 					| Ваша выбор,
-				//- 					| наша работа!
-				//- 				button.btn.btn-danger
-				//- 					span.see-more
-				//- 							| Узнать подробнее
-				//- .carousel-item
-				//- 	.container-fluid
-				//- 		.row
-				//- 			img.d-block.w-100(src='images/board.png', alt='Third slide')
-				//- 			.carousel-caption.d-none.d-md-block
-				//- 					h2.title-inner 
-				//- 						| Ваша выбор,
-				//- 						| наша работа!
-				//- 					button.btn.btn-danger
-				//- 						span.see-more
-				//- 							| Узнать подробнее
+				.carousel-item
+					.container.justify-content-arround.wrap
+						.row.d-flex.slider-container
+							img.d-block(src='images/board.png', alt='Second slide').img.col-sm-12.col-xl-6.col-lg-6.align-self-start
+							.col-4.col-sm-auto.align-self-center.inner-slide
+								h2.title-inner 
+									| Ваша выбор,
+								h2.title-inner наша работа!
+								button.btn.btn-danger
+									span.see-more
+										| Узнать подробнее
+				.carousel-item
+					.container.justify-content-arround.wrap
+						.row.d-flex.slider-container
+							img.d-block(src='images/board.png', alt='Third slide').img.col-sm-12.col-xl-6.col-lg-6.align-self-start
+							.col-4.col-sm-auto.align-self-center.inner-slide
+								h2.title-inner 
+									| Ваша выбор,
+								h2.title-inner наша работа!
+								button.btn.btn-danger
+									span.see-more
+										| Узнать подробнее
+				.carousel-item
+					.container.justify-content-arround.wrap
+						.row.d-flex.slider-container
+							img.d-block(src='images/board.png', alt='Fourth slide').img.col-sm-12.col-xl-6.col-lg-6.align-self-start
+							.col-4.col-sm-auto.align-self-center.inner-slide
+								h2.title-inner 
+									| Ваша выбор,
+								h2.title-inner наша работа!
+								button.btn.btn-danger
+									span.see-more
+										| Узнать подробнее
 			a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
 				span.carousel-control-prev-icon(aria-hidden='true')
 				span.sr-only Previous
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
 				span.carousel-control-next-icon(aria-hidden='true')
 				span.sr-only Next
+
+		footer.footer.container-fluid
+			.container
+				|&#169; 2017   Охота Берестейская
+
 
 		script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
